@@ -1,0 +1,48 @@
+* {
+    font-family: 'Roboto', sans-serif;
+  }
+.btn-runb-primary{
+    border:none;
+    padding:1rem 2rem;
+    border-radius: 50px;
+    color:#FFF;
+    transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) .2s;
+    background: #52BEE2;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.btn-runb-primary:hover{
+    background-color: #66c2e0;
+    color:white;
+}
+
+.btn-runb-business{
+    border:none;
+    padding:1rem 2rem;
+    border-radius: 50px;
+    color:#000;
+    transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) .2s;
+    background: #FFF;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.btn-runb-business:hover{
+    background-color: #66c2e0;
+    color:white;
+}
+
+a{
+    color: #363636;
+    text-decoration: none;
+}
+
+a:hover{
+    color:#000;
+    text-decoration: none;
+}
+
+.form-control{
+    border-radius: 16px!important;
+    border:none;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}

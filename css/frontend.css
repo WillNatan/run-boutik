@@ -1,0 +1,183 @@
+.hero {
+  height: 100vh;
+  width: 100%;
+  background: url("../img/bgfront.jpg") center center;
+  background-size: cover;
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar{
+  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) all .3s;
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: #fff;
+  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) all 0.2s;
+}
+
+.navbar-nav .nav-item {
+  margin-right: 1rem;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: rgb(173, 173, 173);
+}
+
+.hero h1 {
+  color: #fff;
+  font-size: 72px;
+  font-weight: bold;
+}
+
+.hero p {
+  color: rgba(255, 255, 255, 0.692);
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.hero .price {
+  font-size: 72px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.hero.mobile *{
+  word-break: break-word;
+}
+
+.navbar.mobile {
+  background-color: #232323;
+  z-index: 99999;
+}
+
+.navbar.mobile .navbar-toggler {
+  color: #fff;
+  height: 70px;
+}
+
+.navbar.mobile .navbar-brand img {
+  max-width: 50px;
+}
+
+.title-divider {
+  height: 2px;
+  width: 200px;
+  background-color: #66c2e0;
+  margin: 2rem auto;
+}
+
+.runb-card {
+  overflow: hidden;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 16px;
+  height: 100%;
+  background-color: #FFF;
+}
+
+.runb-card .runb-card-header {
+  width: 100%;
+}
+
+.runb-card-body {
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  height:100%;
+}
+
+.runb-card-body a{
+  color:#363636;
+  transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) .2s;
+}
+
+.runb-card-body a:hover{
+  color:#000;
+  text-decoration: none;
+}
+
+.runb-card-body h4{
+  font-size: .8rem;
+  word-break: break-word;
+}
+.runb-card-body .shop-detail{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 2rem;
+  align-items: center;
+  position: absolute;
+  bottom:0;
+  padding:24px;
+}
+
+.runb-card-body .rate{
+  list-style: none;
+  display: flex;
+}
+
+.shop-infos h4{
+  color: rgb(197, 197, 197);
+}
+
+.shop-infos p{
+  font-size: 1rem;
+}
+
+.shop-detail .price{
+  font-weight: bold;
+  color: #66c2e0;
+}
+
+.shop-addresses{
+  list-style: none;
+  padding:0;
+}
+
+.shop-addresses li{
+  color: rgba(255, 255, 255, 0.692);
+}
+
+#navbar-logo{
+transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) .3s;
+}
+
+.hero.search{
+  display: block;
+  width: 100%;
+  padding-top: 250px;
+  background: #FFF;
+  height:auto;
+}
+
+.height-auto{
+  height: auto;
+}
+
+.scrollable{
+  overflow: hidden scroll;
+  height:100%;
+}
+
+
+.scrollable::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollable {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.head{
+  background: #363636;
+  padding:120px;
+}
+
+.head h4{
+  color: #FFF;
+}
