@@ -1,5 +1,8 @@
 <?php
 
+require_once(__DIR__.'/../repository/AddressRepository.php');
+require_once(__DIR__.'/../repository/ProductRepository.php');
+
 class Shop
 {
     private $id;
@@ -153,5 +156,19 @@ class Shop
         $this->is_online = $is_online;
 
         return $this;
+    }
+
+    public function getAddresses()
+    {
+        $addrRepo = new AddressRepository();
+        $addresses = $addrRepo->findBy(['shop_id'=>$this->getId()]);
+        return $addresses;
+    }
+
+    public function getProducts()
+    {
+        $productRepo = new ProductRepository();
+        $products = $productRepo->findBy(['shop_id'=>$this->getId()]);
+        return $products;
     }
 }
